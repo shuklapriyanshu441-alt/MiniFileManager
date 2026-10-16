@@ -1,0 +1,89 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 30px;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+}
+
+/* Box for each section */
+.box {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Input and textarea */
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/* Textarea height */
+textarea {
+    height: 120px;
+}
+
+/* Button */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* File list */
+li {
+    margin: 10px 0;
+}
+
+
+/* My Files */
+#fileList {
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+}
+
+#fileList div,
+#fileList li {
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    background: #f5f7fa;
+    border: 1px solid #dce3ec;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+/* System Information */
+#systemInfo {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+#systemInfo div {
+    padding: 12px;
+    background: #f5f7fa;
+    border: 1px solid #dce3ec;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    #systemInfo {
+        grid-template-columns: 1fr;
+    }
+}
